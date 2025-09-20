@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Icon -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Supyan To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 class="first-title">Supyan</h1>
+                <h1>To Do List</h1>
+            </div>
+        </div>
+        <div class="input-section">
+            <form>
+                <div class="input-wrapper">
+                    <input type="text" id="input-activity" placeholder="Masukkan Aktifitas">
+                    <input type="date" id="input-date">
+                </div>
+                <div class="button-wrapper">
+                    <button type="button" id="add-activity">
+                        <span>Add</span>
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="display-section">
+            <form class="filter-deleteAll-wrapper">
+                <select>
+                    <option value="all">Semua</option>
+                    <option value="completed">Selesai</option>
+                    <option value="uncompleted">Belum Selesai</option>
+                </select>
+                <button type="button" class="delete-all" id="delete-all" onclick="">Hapus Semua</button>
+            </form>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Aktifitas</th>
+                            <th>Tanggal</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="display-container">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

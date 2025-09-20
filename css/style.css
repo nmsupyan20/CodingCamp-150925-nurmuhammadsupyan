@@ -1,0 +1,150 @@
+:root {
+    --primary: #a8c0ff;
+    --secondary: #3f2b96;
+    --edge-radius: 2rem;
+    --tertiary: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, var(--primary), var(--secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: 80vh;
+    /* background-color: white; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+    gap: 1.3rem 0;
+}
+
+.header {
+    height: 100%;
+    background-color: var(--tertiary);
+    border-radius: var(--edge-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.header div h1 {
+    text-align: center;
+    color: #96b3f7;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.header div h1.first-title {
+    color: #614385;
+    font-weight: 600;
+}
+
+.input-section {
+    height: 100%;
+    background-color: var(--tertiary);
+    border-radius: var(--edge-radius);
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+}
+
+.input-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.input-section form .input-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-section form input {
+    width: 49%;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.input-section .button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.input-section .button-wrapper button {
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    padding: 0.4rem 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.display-section {
+    height: 100%;
+    background-color: var(--tertiary);
+    border-radius: var(--edge-radius);
+    padding: 1.2rem;
+}
+
+.filter-deleteAll-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.filter-deleteAll-wrapper select {
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.filter-deleteAll-wrapper .delete-all {
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    background-color: rgb(233, 3, 3);
+    color: var(--tertiary);
+}
+
+.display-section .table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+    border-radius: var(--edge-radius);
+    border: 1px solid var(--secondary);
+}
+
+.display-section .table-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.display-section .table-wrapper table thead th {
+    padding: 0.3rem;
+}
+
+.display-section .table-wrapper table tbody td {
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.info-activity {
+    text-align: center;
+    color: var(--secondary);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
